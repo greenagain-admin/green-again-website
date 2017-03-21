@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1.2em;
+    min-width: 980px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5E8F3A;
+}
+
+#top {
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#top > p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-container {
+    width: 70%;
+    padding: 3% 15% 3% 15%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section-container > p {
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.section-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.section-subsect {
+    margin-bottom: 1.5em
+}
+
+.vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.height-full {
+    display: block;
+}
+
+.button {
+    padding: 0;
+    display: inline-block;
+    padding: .5em;
+    font-size: 1.2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FFFFFF;
+    background-color: #FF9100;
+    vertical-align: top;
+}
+
+.headline-size {
+    font-size: 4em;
+}
+
+.title-size {
+    font-size: 2.5em;
+}
+
+.subtitle-size {
+    font-size: 1.5em;
+}
+
+.accent-size {
+    font-size: 1.2em;
+}
+
+.body-size {
+    font-size: 1em;
+}
+
+.title-font {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.body-font {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.aligh-right {
+    text-align: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.pad-below-3em {
+    margin-bottom: 3em;
+}
+
+.first-sec {
+    padding-top: 6%;
+}
+
+.last-sec {
+    padding-bottom: 6%;
+}
