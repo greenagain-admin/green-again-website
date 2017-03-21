@@ -1,0 +1,83 @@
+/*.man-button {
+    border-radius: 50%;
+    height: 6em;
+    width: 6em;
+    padding: 2em;
+    margin: 0 1.5em 0 1em;
+    background: #5E8F3A;
+    display: inline-block;
+}
+
+.man-button > img {
+    height: 100%;
+}
+
+.circle-button {
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    padding: 1.5em;
+    margin: 0 1.5em 0 1em;
+    background: #00B0FF;
+    display: inline-block;
+}
+
+.circle-button > img {
+    height: 100%;
+}
+
+.input-email {
+    width: 30%;
+    margin-right: -.2em;
+    padding: .2em .5em .43em .5em;
+    font-size: 120%;
+    font-family: 'Open Sans', sans-serif;
+}*/
+
+.gallery {
+    width: 30%;
+    padding: .5em;
+    display: inline-block;
+}
+
+.gallery > img {
+    width: 100%;
+}
+
+#current-project {
+    background-color: #DCECCC;
+}
+
+#highlights {
+    background-color: #DCECCC;
+}
+
+.work-section {
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+.work-icon-wrapper {
+    width: 20%;
+}
+
+.work-icon {
+    width: 100%
+}
+
+.work-padding-wrapper {
+    width: 5%;
+}
+
+.work-text-wrapper {
+    width: 60;
+}
+
+.work-text {
+    text-align: left;
+}
+
+.work-text > p {
+    padding-bottom: 1em;
+}
+
