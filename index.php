@@ -1,19 +1,27 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang='en-us'>
 
 <head>
-
-    <?php
-        $preamble = $_SERVER['DOCUMENT_ROOT']."/public/public_preamble.php";
-        include_once($preamble);
-    ?>
+<meta charset="utf-8">
 
     <meta name='description' content='Official website for Green Again.'>
     <link rel='stylesheet' type='text/css' href='home.css'>
-    <title>Green Again | Home</title>
+    <title>{% block page_title &}
+    Green Again
+    {% endblock%}
+    </title>
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <meta name="author" content="{% block meta_author %}{% endblock %}">
+
 </head>
 
-<body>
+<body class="{% block body_class %}{% endblock %}">
+    % block body %}
+    {% with form=form  %}
+    {% include "nav.html" %}
+    {% endwith %}
+    <!-- navbar template -->
+    <!-- footer -->
     <div id='top' class='height-full' style='background-image: url(/img_src/home_cover.jpg)'>
 
         <?php
@@ -113,14 +121,11 @@
         $scripts = $_SERVER['DOCUMENT_ROOT']."/public/public_scripts.php";
         include_once($scripts);
     ?>
-    
+
     <script src='/home.js'></script>
-    
+
     <!-- Counter up API: https://github.com/bfintal/Counter-Up -->
     <script src="/scripts/waypoints.min.js"></script>
     <script src="/scripts/jquery.counterup.min.js"></script>
 </body>
 </html>
-
-
-

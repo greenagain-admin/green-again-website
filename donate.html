@@ -2,6 +2,11 @@
 <html lang='en-us'>
 
 <head>
+    <!-- Load the Client component. -->
+<script src="https://js.braintreegateway.com/web/3.11.1/js/client.min.js"></script>
+
+<!-- Load the Hosted Fields component. -->
+<script src="https://js.braintreegateway.com/web/3.11.1/js/hosted-fields.min.js"></script>
 
     <meta charset='UTF-8'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
@@ -30,7 +35,43 @@
     </p>
     </div>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+<img src='./icon_src/ga_logo.png' />
+        <div class="demo-frame">
+            <h1 class='section-title title-size' style='text-align: left; padding: 0;'>Payment Information</h1>
+  <form action="/" method="post" id="donateForm" >
+      <div id="error-message"></div>
+    <label class="hosted-fields--label" for="card-number">Card Number</label>
+    <div id="card-number" class="hosted-field"></div>
+
+    <label class="hosted-fields--label" for="expiration-date">Expiration Date</label>
+    <div id="expiration-date" class="hosted-field"></div>
+
+    <label class="hosted-fields--label" for="cvv">CVV</label>
+    <div id="cvv" class="hosted-field"></div>
+
+    <label class="hosted-fields--label" for="postal-code">Postal Code</label>
+    <div id="postal-code" class="hosted-field"></div>
+    <input type="hidden" name="payment_method_nonce">
+
+    <div class="button-container">
+
+    <input type="submit" class="button button--small button--green" value="Submit" id="submit"/>
+    </div>
+  </form>
+    </div>
+        </div>
+            </div>
+
+
     <div class='section-container first-sec'>
+    <button id="myBtn" class='button vertical-center' style='font-size: 2em' style='padding-left: 200%'>DONATE</button>
         <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=SJQDUHJ9MWVRS&lc=US&item_name=Green%20Again%20Madagascar&item_number=Ivoloina%20Park%20Project&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted' target="_blank"><div class='button vertical-center' style='font-size: 2em' style='padding-left: 200%'>DONATE</div></a>
 
         <table class="work-section">
@@ -118,8 +159,11 @@
     </div>
     <div id='footer_split_line'></div>
     <p id='copyright'>Copyright &copy; 2017 Green Again</p>
-</div><script src='./scripts/jquery-2.2.0.min.js'></script>
+</div>
+<script src='./scripts/jquery-2.2.0.min.js'></script>
+<script src='./donate.js'></script>
 <script src='./public/public_js.js'></script>
+
 <script src='./navbar/navbar.js'></script>
     <script src='./work/work.js'></script>
 
